@@ -97,7 +97,7 @@ namespace ndof
 
         ExpressionResult otherwise(const Callable auto &&f)
         {
-            return then<true>(std::forward < decltype<f>(f));
+            return then<true>(std::forward < decltype(f)> (f));
         }
 
         ExpressionResult otherwise(const auto &&v)
