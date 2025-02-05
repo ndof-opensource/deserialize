@@ -15,10 +15,7 @@
 #include <vector>
 
 #include <sstream>
-
-#include <boost/pfr/tuple_size.hpp>`
-#include <boost/pfr.hpp>
-
+ 
 namespace ndof
 {
 
@@ -41,6 +38,7 @@ namespace ndof
 
     std::string_view trim_whitespace(std::string_view);
 
+    // TODO: 
     template <std::integral T>
     bool convert_to_integral(std::string_view strView, T &t)
     {
@@ -153,4 +151,5 @@ namespace ndof
         return result;
     }
 
+}
 #endif
